@@ -10,6 +10,7 @@ def display_banner():
 
 def main():
     display_banner()
+    print(Fore.MAGENTA + "Welcome to the Quiz Creator! Type 'exit' anytime to stop.\n")
 
 if __name__ == "__main__":
     main()
