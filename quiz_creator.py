@@ -27,6 +27,12 @@ def main():
         answer_b = input("Choice B: ")
         answer_c = input("Choice C: ")
         answer_d = input("Choice D: ")
+        
+        # Get the correct answer input from the user
+        correct_choice = input("Correct answer a/b/c/d: ").lower()
+        if correct_choice not in ['a', 'b', 'c', 'd']:
+            print(Fore.RED + "Invalid answer choice, Please choose a valid option.\n")
+            continue
 
 if __name__ == "__main__":
     main()
