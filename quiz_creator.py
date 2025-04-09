@@ -21,6 +21,12 @@ def main():
         question_text = input(Fore.BLUE + "Enter your question: ").strip()
         if question_text.lower() == 'exit':
             break
+        
+        # Get the possible answer from the user
+        answer_a = input("Choice A: ")
+        answer_b = input("Choice B: ")
+        answer_c = input("Choice C: ")
+        answer_d = input("Choice D: ")
 
 if __name__ == "__main__":
     main()
