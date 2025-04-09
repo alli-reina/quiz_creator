@@ -55,7 +55,18 @@ def main():
         
         question_countt += 1
         print(Fore.GREEN + f"Question #{question_count} saved!\n")
-
-
+        
+        # Ask if the user wants to add another question
+        while True:
+            add_another = input("Add another question? (yes/no): ").strip().lower()
+            if add_another in ["yes","no"]:
+                break
+            elif not add_another: # Handle the errors if ever there is
+                print(Fore.RED + "Please type 'yes' or 'no' only.")
+            else:
+                print(Fore.RED + "Please type 'yes' or 'no' only.")
+        
+        if add_another == "no":
+            break
 if __name__ == "__main__":
     main()
