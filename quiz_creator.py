@@ -33,6 +33,16 @@ def main():
         if correct_choice not in ['a', 'b', 'c', 'd']:
             print(Fore.RED + "Invalid answer choice, Please choose a valid option.\n")
             continue
+        
+        # Save the question and answer to a txt file
+        with open("quiz.txt", "a", encoding="utf-8") as quiz_file:
+            quiz_file.write(f"Question: {question_text}\n")
+            quiz_file.write(f"a) {answer_a}\n")
+            quiz_file.write(f"b) {answer_b}\n")
+            quiz_file.write(f"c) {answer_c}\n")
+            quiz_file.write(f"d) {answer_d}\n")
+            quiz_file.write(f"Answer: {correct_choice}\n")
+            quiz_file.write("---\n")
 
 if __name__ == "__main__":
     main()
