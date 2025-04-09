@@ -43,6 +43,16 @@ def main():
             quiz_file.write(f"d) {answer_d}\n")
             quiz_file.write(f"Answer: {correct_choice}\n")
             quiz_file.write("---\n")
+            
+        # Show a swummary of the question previously added
+        print(Fore.GREEN + "\n Question saved!")
+        print(Fore.YELLOW + f"Question: {question_text}")
+        print(f"a) {answer_a}")
+        print(f"b) {answer_b}")
+        print(f"c) {answer_c}")
+        print(f"d) {answer_d}")
+        print(Fore.GREEN + f"Correct Answer: {correct_choice}\n")
+
 
 if __name__ == "__main__":
     main()
