@@ -52,6 +52,9 @@ def main():
         print(f"c) {answer_c}")
         print(f"d) {answer_d}")
         print(Fore.GREEN + f"Correct Answer: {correct_choice}\n")
+        
+        question_countt += 1
+        print(Fore.GREEN + f"Question #{question_count} saved!\n")
 
 
 if __name__ == "__main__":
