@@ -53,7 +53,7 @@ def main():
         print(f"d) {answer_d}")
         print(Fore.GREEN + f"Correct Answer: {correct_choice}\n")
         
-        question_countt += 1
+        question_count += 1
         print(Fore.GREEN + f"Question #{question_count} saved!\n")
         
         # Ask if the user wants to add another question
@@ -68,5 +68,9 @@ def main():
         
         if add_another == "no":
             break
+    
+    print(Fore.CYAN + f"\n{question_count} question(s) saved to 'quiz.txt'. ")
+    print(Fore.CYAN + "Thank you!")
+    
 if __name__ == "__main__":
     main()
