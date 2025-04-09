@@ -69,8 +69,8 @@ def main():
         if add_another == "no":
             break
     
-    print(Fore.CYAN + f"\n{question_count} question(s) saved to 'quiz.txt'. ")
-    print(Fore.CYAN + "Thank you!")
+    print(Fore.LIGHTMAGENTA_EX + f"\n{question_count} question(s) saved to 'quiz.txt'. ")
+    print(Fore.MAGENTA + "Thank you!")
     
 if __name__ == "__main__":
     main()
