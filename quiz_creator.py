@@ -23,10 +23,10 @@ def main():
             break
         
         # Get the possible answer from the user
-        answer_a = input("Choice A: ")
-        answer_b = input("Choice B: ")
-        answer_c = input("Choice C: ")
-        answer_d = input("Choice D: ")
+        answer_alpha = input("Choice A: ")
+        answer_bravo = input("Choice B: ")
+        answer_charlie = input("Choice C: ")
+        answer_delta = input("Choice D: ")
         
         # Get the correct answer input from the user
         correct_choice = input("Correct answer a/b/c/d: ").lower()
@@ -37,20 +37,20 @@ def main():
         # Save the question and answer to a txt file
         with open("quiz.txt", "a", encoding="utf-8") as quiz_file:
             quiz_file.write(f"Question: {question_text}\n")
-            quiz_file.write(f"a) {answer_a}\n")
-            quiz_file.write(f"b) {answer_b}\n")
-            quiz_file.write(f"c) {answer_c}\n")
-            quiz_file.write(f"d) {answer_d}\n")
+            quiz_file.write(f"Alpha) {answer_alpha}\n")
+            quiz_file.write(f"Bravo) {answer_bravo}\n")
+            quiz_file.write(f"Charlie) {answer_charlie}\n")
+            quiz_file.write(f"Delta) {answer_delta}\n")
             quiz_file.write(f"Answer: {correct_choice}\n")
             quiz_file.write("---\n")
             
-        # Show a swummary of the question previously added
+        # Show a summary of the question previously added
         print(Fore.GREEN + "\n Question saved!")
         print(Fore.YELLOW + f"Question: {question_text}")
-        print(f"a) {answer_a}")
-        print(f"b) {answer_b}")
-        print(f"c) {answer_c}")
-        print(f"d) {answer_d}")
+        print(f"Alpha) {answer_alpha}")
+        print(f"Bravo) {answer_bravo}")
+        print(f"Charlie) {answer_charlie}")
+        print(f"Delta) {answer_delta}")
         print(Fore.GREEN + f"Correct Answer: {correct_choice}\n")
         
         question_count += 1
@@ -74,3 +74,4 @@ def main():
     
 if __name__ == "__main__":
     main()
+    
